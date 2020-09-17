@@ -88,29 +88,29 @@ Each type of Person has different functionality:
 You can now use these Persons to do any tasks you like.
 They each have their own home screen with processes you can select from.
 
-Each user starts with one of each account available (Credit Card, Line of Credit, Chequing, Saving, Investment).
-    Some requests require a BankWorker to process them before they go through/pass:
-        - creation of a new user upon log in
-        - creation of a request for a new account or joint account
-        These things must be processed by a BankWorker before they begin to exist.
+Each user starts with one of each account available (Credit Card, Line of Credit, Chequing, Saving, Investment).<br/>
+Some requests require a BankWorker to process them before they go through/pass:
+- Creation of a new user upon log in
+- Creation of a request for a new account or joint account.<br/>
+These things must be processed by a BankWorker before they begin to exist.
 
 ### NOTICE:
-_ALERT ALERT ALERT - 1:_
-    _IF THE PROGRAM FAILS TO RUN DUE TO THE INABILITY TO LOCATE THE NECESSARY ALERT TEXT FILE...
-    THIS MIGHT BE DUE TO A CHANGE IN THE PATH UPON DOWNLOADING TO A NEW COMPUTER. PLEASE FIX THE PATH IN THE CODE MANUALLY
-        - THE ALERT FILE PATH IS USED IN THE ATM CLASS' WRITEFILE METHOD AND THE BANKMANAGER'S FILLATM METHOD_
+_ALERT ALERT ALERT - 1:_ <br/>
+    _If the program fails to run due to the inability to locate the necessary alert text file...<br/>
+    This might be due to a change in the path upon downloading to a new computer.<br/>
+    Please fix the path in the code manually. <br/>
+    - The alert file path is used in the ATM class' writeFile method and the BankManager's fillATM method_
 
-_ALERT ALERT ALERT - 2:
-    FUNCTIONALITY OF TWILIO TEXT MESSAGING AND PHONE CALLING IS DEPENDANT OF HAVING A PRE-EXISTING VERIFIED PHONE NUMBER.
-    AS OF RIGHT NOW, ONLY THE DEVELOPERS OF THE PROGRAM HAVE THEIR PHONE NUMBERS VERIFIED. FOR THIS REASON IT WILL FAIL TO WORK FOR NEW USERS.
-        - THE PROGRAM TEXTS YOU IF YOU TRY TO MAKE A NEW USER FROM THE LOGIN SCREEN. IT ASKS FOR A 2-FACTOR AUTHENTICATION.
-            YOU WILL NOT BE ABLE TO GET THIS INFORMATION UNLESS A GROUP MEMBER IS THERE. SO TO CREATE A NEW USER, PLEASE LOG IN AS BANK MANAGER
-            AND DO IT FROM THEIR MAIN MENU.
-        - THE PROGRAM CALLS YOU IF YOU TRY TO ENTER AN INCORRECT PASSWORD TO AN ACCOUNT 3 TIMES. IF YOU DO THIS IT WILL LOCK YOU OUT OF THE
-        ACCOUNT UNTIL YOU LOG IN AS THE BANK MANAGER TO UN-LOCK THE ACCOUNT. YOU WILL NOT RECEIVE A PHONE CALL... A GROUP MEMBER WILL._
+_ALERT ALERT ALERT - 2:_ <br/>
+    _Functionality of Twilio text messaging and phone calling is dependant of having a pre-exisiting verified phone number.<br/>
+    Only the developers of the program have their phone numbers verified. For this reason it will fail to work for new users.<br/>
+    - The program texts the developers if you try to make a new user from the login screen. It asks for a 2-factor authentification.
+    You will not be able to get this information unless a group member is there.
+    To create a new user, please log in as a Bank Manager and do it from the main menu.</br>
+    - The program calls you if you try to enter an incorrect password to an account 3 times. If you do this it will lock you out of the account until you
+    log in as the Bank Manager to Un-lock the account. You will not receieve a phone call - a group member will._
 
-_ALERT ALERT ALERT - 3:
-    FUNCTIONALITY OF THE WEBSCRAPER DEPENDS ON THE JSOUP LIBRARY. FURTHERMORE, WEBSCRAPER USES THE WEBPAGE OF FINANCE.YAHOO TO GET STOCK
-    INFORMATION. IF THE WEBPAGE'S HTML CODE CHANGES UPON AN UPDATE TO THE WEBSITE (working as of March 31st, 2019) THEN THERE MIGHT BE AN ERROR
-    AS THE WEBSCRAPER ATTEMPTS TO SEARCH THROUGH THE HTML CODE TO GET THE NECESSARY STOCK INFO._
-
+_ALERT ALERT ALERT - 3:_ <br/>
+    _Functionality of the webscraper depends on the Jsoup library. Furthermore, webscraper uses the webpage of finance.yahoo to get stock information. <br/>
+    If the webpage's HTML code changes upon an update to the website (working as of March 31st, 2019) then there might be an error as the webscraper attempts to 
+    search through the HTML code to get the necessary stock info._
