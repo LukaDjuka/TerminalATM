@@ -20,7 +20,7 @@ into the program. The instructions (Step 4) below contain information about thes
 The ATM is able to interact with three types of Persons: Users, Bank Managers, Assistant Bank Managers.
 Each type of Person has their own actions they are able to perform using the ATM (more is explained in Step 4 of the instructions below).
 
-## Notable features of the ATM (outside of the average features you've come to expect)
+## Notable features of the ATM 
 ### Stocks
 - Outside of the normal 'withdrawing and depositing' funcitonality you've come to expect with your average ATM, this program also allows the user to browse through
 real world stocks using the webscraping functionality of the Jsoup library and the finance.yahoo website.<br/> Users are able to buy and sell stocks which are held in their
